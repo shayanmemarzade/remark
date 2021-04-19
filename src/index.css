@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Nunito SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Nunito SemiBold"), url("assets/fonts/Nunito/Nunito-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Nunito Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Nunito Bold"), url("assets/fonts/Nunito/Nunito-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lato Regular"), url("assets/fonts/Lato/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lato SemiBold"), url("assets/fonts/Lato/Lato-Semibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lato Bold"), url("assets/fonts/Lato/Lato-Bold.woff") format("woff");
+}
+.font-nunito-semibold {
+    font-family: "Nunito SemiBold";
+}
+
+.font-nunito-bold {
+    font-family: "Nunito Bold";
+}
+
+.font-lato-regular {
+    font-family: "Lato Regular";
+}
+
+.font-lato-semibold {
+    font-family: "Lato SemiBold";
+}
+
+.font-lato-bold {
+    font-family: "Lato Bold";
+}

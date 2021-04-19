@@ -10,7 +10,7 @@
       />
       <div class="modal__dialog p-10">
         <div class="modal__header">
-          <span class="block text-2xl text-gray-900 font-bold"
+          <span class="block text-2xl text-gray-900 font-bold font-nunito-bold"
             >Delete account</span
           >
           <button type="button" class="modal__close" @click="closeModal()">
@@ -18,24 +18,24 @@
           </button>
         </div>
         <div class="modal__body">
-          <p class="text-sm text-gray-500 mb-8">
+          <p class="text-sm text-gray-500 mb-8 font-lato-regular">
             Your account will be permanently deleted and you won’t be able to
             retreive the information that you shared on #Remarkable. Please
             enter your email address to get an account deletion code -
           </p>
           <label class="block mb-10 text-left">
-            <span class="text-gray-800 font-semibold text-xs"
+            <span class="text-gray-800 font-semibold text-xs font-lato-semibold"
               >Enter your email address</span
             >
             <input
               type="email"
-              class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 lg:w-7/12"
+              class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 lg:w-7/12 font-lato-regular"
               placeholder="abc@xyz.com"
             />
           </label>
           <div class="" v-if="step == 'deleteStep1'">
             <button
-              class="px-6 py-4 border-b-4 border-green-700 text-base font-semibold rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none transition duration-150 ease-in-out text-center"
+              class="font-lato-semibold px-6 py-4 border-b-4 border-green-700 text-base font-semibold rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none transition duration-150 ease-in-out text-center"
               @click="step = 'deleteStep2'"
             >
               Get account deletion code
@@ -43,7 +43,7 @@
           </div>
           <div class="" v-if="step == 'deleteStep2'">
             <hr class="mb-6 border-gray-300" />
-            <p class="text-sm text-gray-800 mb-4">
+            <p class="text-sm text-gray-800 mb-4 font-lato-regular">
               We have sent a 6 digit code to your <b>email address</b>. Please
               enter the code in order to delete your account.
             </p>
@@ -51,49 +51,49 @@
             <div class="flex mb-10">
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold mr-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold mr-2 rounded-md border-gray-400 text-gray-700 text-center"
                 v-on:keyup="$event.target.nextElementSibling.focus()"
                 maxlength="1"
                 placeholder="0"
               />
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
                 v-on:keyup="$event.target.nextElementSibling.focus()"
                 maxlength="1"
                 placeholder="0"
               />
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
                 v-on:keyup="$event.target.nextElementSibling.focus()"
                 maxlength="1"
                 placeholder="0"
               />
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
                 v-on:keyup="$event.target.nextElementSibling.focus()"
                 maxlength="1"
                 placeholder="0"
               />
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold mx-2 rounded-md border-gray-400 text-gray-700 text-center"
                 v-on:keyup="$event.target.nextElementSibling.focus()"
                 maxlength="1"
                 placeholder="0"
               />
               <input
                 type="text"
-                class="w-12 h-12 text-xl font-semibold ml-2 rounded-md border-gray-400 text-gray-700 text-center"
+                class="font-lato-semibold w-12 h-12 text-xl font-semibold ml-2 rounded-md border-gray-400 text-gray-700 text-center"
                 maxlength="1"
                 placeholder="0"
               />
             </div>
 
             <button
-              class="px-8 py-3 border-b-4 border-red-700 text-base   rounded-md text-white bg-red-500 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 text-center"
+              class="font-lato-semibold px-8 py-3 border-b-4 border-red-700 text-base   rounded-md text-white bg-red-500 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10 text-center"
               @click="step = 'deleteStep2'"
             >
               Get account deletion code
